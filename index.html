@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SKYROCKET BOOST by Sabbir Ahmad — Facebook page setup, social media design, content creation and digital marketing support.">
+  <meta name="theme-color" content="#071a3d">
+  <title>SKYROCKET BOOST | Digital Marketing by Sabbir Ahmad</title>
+  <style>
+    :root{
+      --navy:#071a3d;--blue:#0866ff;--blue2:#1688ff;--pale:#eef5ff;
+      --white:#fff;--ink:#10213e;--muted:#61708a;--line:#dbe6f5;
+      --shadow:0 18px 50px rgba(7,26,61,.12);--radius:22px
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(1140px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.5px;color:var(--navy)}
+    .brand-mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--blue),#55c9ff);font-weight:900;font-size:1rem;box-shadow:0 8px 18px #0866ff33}
+    .brand span:last-child{color:var(--blue)}
+    .navlinks{display:flex;align-items:center;gap:24px;color:#40516c;font-weight:700;font-size:.92rem}
+    .navlinks a:hover{color:var(--blue)}
+    .nav-actions{display:flex;align-items:center;gap:10px}
+    .lang-btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;font-weight:800;color:var(--navy);cursor:pointer}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800;border:1px solid var(--blue);transition:.2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px #0866ff30;background:#0054df}
+    .btn-outline{background:#fff;color:var(--blue);border-color:#b9d1ff}
+    .btn-outline:hover{background:var(--pale);color:var(--blue)}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 12%,#d9edff 0,transparent 32%),linear-gradient(135deg,#f8fbff,#edf5ff);padding:76px 0 72px}
+    .hero:after{content:"";position:absolute;width:410px;height:410px;border:1px solid #b8d6ff;border-radius:50%;right:-170px;bottom:-230px;pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:52px;position:relative;z-index:1}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;background:#e0edff;color:#0753cc;border:1px solid #c9ddff;border-radius:99px;font-weight:800;font-size:.82rem}
+    .dot{width:8px;height:8px;background:#1688ff;border-radius:50%}
+    h1{font-size:clamp(2.7rem,6vw,4.7rem);line-height:1.03;letter-spacing:-2px;color:var(--navy);margin:21px 0}
+    h1 em{font-style:normal;color:var(--blue)}
+    .hero p{font-size:1.08rem;color:var(--muted);max-width:610px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+    .trust-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#4e5f79;font-size:.88rem;font-weight:700}
+    .trust-row span:before{content:"✓";color:var(--blue);font-weight:900;margin-right:7px}
+    .hero-art{position:relative}
+    .hero-art img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:30px;border:5px solid #fff;box-shadow:var(--shadow)}
+    .floating-note{position:absolute;left:-25px;bottom:24px;background:#fff;padding:15px 18px;border-radius:16px;box-shadow:var(--shadow);font-weight:900;color:var(--navy);border:1px solid var(--line)}
+    .floating-note small{display:block;color:var(--muted);font-weight:600;font-size:.78rem}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:730px;margin:0 auto 38px}
+    .kicker{color:var(--blue);font-size:.8rem;letter-spacing:1.8px;text-transform:uppercase;font-weight:900}
+    h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;letter-spacing:-.8px;color:var(--navy);margin:10px 0 14px}
+    .section-head p{color:var(--muted)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:26px;background:#fff;border:1px solid var(--line);border-radius:19px;box-shadow:0 6px 22px rgba(7,26,61,.04);transition:.2s}
+    .service:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#b9d1ff}
+    .service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:var(--pale);font-size:1.55rem;margin-bottom:18px}
+    .service h3{font-size:1.08rem;color:var(--navy);margin-bottom:8px}
+    .service p{color:var(--muted);font-size:.94rem}
+    .service .mini-link{display:inline-block;margin-top:15px;color:var(--blue);font-weight:800;font-size:.9rem}
+    .about{background:#f6f9ff}
+    .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+    .poster-frame{padding:12px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+    .poster-frame img{width:100%;border-radius:16px}
+    .about-copy p{color:var(--muted);margin:12px 0}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+    .check{background:#fff;border:1px solid var(--line);padding:12px;border-radius:12px;font-weight:750;font-size:.91rem}
+    .check b{color:var(--blue);margin-right:7px}
+    .portfolio-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .portfolio-item{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 8px 26px #071a3d0b}
+    .portfolio-item img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+    .portfolio-caption{padding:17px 20px}
+    .portfolio-caption h3{color:var(--navy);font-size:1rem}
+    .portfolio-caption p{color:var(--muted);font-size:.9rem;margin-top:4px}
+    .note{margin-top:20px;padding:15px 17px;background:#f3f7ff;border-left:4px solid var(--blue);border-radius:8px;color:#4d5e79;font-size:.9rem}
+    .process{background:var(--navy);color:#fff}
+    .process h2{color:#fff}.process .section-head p{color:#c0cee4}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{border:1px solid #27416b;background:#0d2650;border-radius:18px;padding:24px}
+    .step-num{width:38px;height:38px;border-radius:12px;background:#1d72ff;display:grid;place-items:center;font-weight:900;margin-bottom:14px}
+    .step h3{margin-bottom:8px}.step p{color:#c0cee4;font-size:.94rem}
+    .contact{background:linear-gradient(135deg,#eaf3ff,#f8fbff)}
+    .contact-box{display:grid;grid-template-columns:1fr .9fr;gap:35px;background:#fff;padding:36px;border:1px solid var(--line);border-radius:25px;box-shadow:var(--shadow)}
+    .contact-box p{color:var(--muted);margin-top:10px}
+    .contact-links{display:grid;gap:12px;align-content:center}
+    .contact-link{display:flex;align-items:center;gap:13px;border:1px solid var(--line);padding:15px;border-radius:14px;font-weight:800;overflow-wrap:anywhere}
+    .contact-link:hover{border-color:#8bb5ff;background:#f7faff}
+    .contact-icon{width:42px;height:42px;display:grid;place-items:center;background:var(--pale);border-radius:12px;font-size:1.25rem;flex-shrink:0}
+    .contact-link small{display:block;font-weight:600;color:var(--muted);font-size:.8rem}
+    footer{background:#06132d;color:#c3d1e7;padding:27px 0}
+    .footer-row{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+    .footer-brand{font-weight:900;color:#fff}
+    .footer-brand span{color:#66b6ff}
+    .footer-small{font-size:.86rem}
+    @media(max-width:850px){
+      .navlinks{gap:13px}.hero-grid,.about-grid,.contact-box{grid-template-columns:1fr}
+      .hero-art{max-width:540px;margin:0 auto}.floating-note{left:10px}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .about-grid{gap:30px}.poster-frame{max-width:560px;margin:auto}
+    }
+    @media(max-width:600px){
+      .nav{min-height:68px;flex-wrap:wrap;padding:11px 0}
+      .navlinks{order:3;width:100%;justify-content:space-between;padding:4px 0 7px;font-size:.83rem}
+      .nav-actions .btn{display:none}.brand{font-size:.94rem}.brand-mark{width:38px;height:38px}
+      .hero{padding:53px 0}.hero-grid{gap:35px}h1{letter-spacing:-1.2px}
+      section{padding:62px 0}.services-grid,.steps,.portfolio-grid{grid-template-columns:1fr}
+      .checks{grid-template-columns:1fr}.contact-box{padding:24px}
+      .floating-note{font-size:.9rem;bottom:12px;padding:11px 13px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Skyrocket Boost home"><span class="brand-mark">SB</span><span>SKYROCKET <span>BOOST</span></span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#services" data-en="Services" data-bn="সার্ভিস">Services</a>
+      <a href="#about" data-en="About" data-bn="আমার সম্পর্কে">About</a>
+      <a href="#portfolio" data-en="Portfolio" data-bn="পোর্টফোলিও">Portfolio</a>
+      <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-btn" id="languageToggle" type="button" aria-label="Switch language">বাংলা</button>
+      <a class="btn" href="#contact" data-en="Let's Talk ↗" data-bn="যোগাযোগ করুন ↗">Let's Talk ↗</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pill"><span class="dot"></span><span data-en="DIGITAL MARKETING & CREATIVE SUPPORT" data-bn="ডিজিটাল মার্কেটিং ও ক্রিয়েটিভ সাপোর্ট">DIGITAL MARKETING & CREATIVE SUPPORT</span></div>
+        <h1 data-en-html="Grow your brand.<br><em>Boost your presence.</em>" data-bn-html="আপনার ব্র্যান্ডকে এগিয়ে নিন।<br><em>অনলাইনে পরিচিতি বাড়ান।</em>">Grow your brand.<br><em>Boost your presence.</em></h1>
+        <p data-en="I'm Sabbir Ahmad, the creator behind SKYROCKET BOOST. I help businesses and creators build a clearer, more professional social media presence through page setup, design and content support." data-bn="আমি সাব্বির আহমেদ, SKYROCKET BOOST-এর উদ্যোক্তা। পেজ সেটআপ, ডিজাইন ও কনটেন্ট সাপোর্টের মাধ্যমে ব্যবসা ও কনটেন্ট ক্রিয়েটরদের সোশ্যাল মিডিয়ায় আরও সুন্দর ও প্রফেশনাল উপস্থিতি গড়তে সাহায্য করি।">I'm Sabbir Ahmad, the creator behind SKYROCKET BOOST. I help businesses and creators build a clearer, more professional social media presence through page setup, design and content support.</p>
+        <div class="actions">
+          <a class="btn" href="#contact" data-en="Discuss Your Project ↗" data-bn="আপনার কাজ নিয়ে কথা বলুন ↗">Discuss Your Project ↗</a>
+          <a class="btn btn-outline" href="#services" data-en="Explore Services" data-bn="সার্ভিস দেখুন">Explore Services</a>
+        </div>
+        <div class="trust-row">
+          <span data-en="Creative design support" data-bn="ক্রিয়েটিভ ডিজাইন সাপোর্ট">Creative design support</span>
+          <span data-en="Clear communication" data-bn="স্পষ্ট যোগাযোগ">Clear communication</span>
+          <span data-en="Bangla & English" data-bn="বাংলা ও ইংরেজি">Bangla & English</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/skyrocket-boost-brand.png" alt="SKYROCKET BOOST digital marketing brand artwork">
+        <div class="floating-note"><span data-en="Your next step starts here 🚀" data-bn="আপনার পরবর্তী পদক্ষেপ এখান থেকেই 🚀">Your next step starts here 🚀</span><small data-en="Let's build your online presence" data-bn="চলুন অনলাইন উপস্থিতি গড়ে তুলি">Let's build your online presence</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker" data-en="HOW I CAN HELP" data-bn="যেভাবে সাহায্য করতে পারি">HOW I CAN HELP</div>
+        <h2 data-en="Services designed for your online presence" data-bn="আপনার অনলাইন উপস্থিতির জন্য সার্ভিস">Services designed for your online presence</h2>
+        <p data-en="Choose the support that fits your brand. Share your goals and I'll discuss a suitable scope and quote with you." data-bn="আপনার ব্র্যান্ডের উপযোগী সাপোর্ট বেছে নিন। আপনার লক্ষ্য জানালে কাজের পরিধি ও মূল্য নিয়ে আলোচনা করা যাবে।">Choose the support that fits your brand. Share your goals and I'll discuss a suitable scope and quote with you.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service"><div class="service-icon">📘</div><h3 data-en="Facebook Business Page Setup & Optimization" data-bn="Facebook Business Page সেটআপ ও অপটিমাইজেশন">Facebook Business Page Setup & Optimization</h3><p data-en="Organize your page details and present your business professionally." data-bn="আপনার পেজের তথ্য গুছিয়ে ব্যবসাকে প্রফেশনালভাবে উপস্থাপন করুন।">Organize your page details and present your business professionally.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">🖼️</div><h3 data-en="Facebook Post Design & Content Creation" data-bn="Facebook পোস্ট ডিজাইন ও কনটেন্ট তৈরি">Facebook Post Design & Content Creation</h3><p data-en="Creative post visuals and captions tailored to your page and message." data-bn="আপনার পেজ ও বার্তার উপযোগী পোস্ট ডিজাইন এবং ক্যাপশন।">Creative post visuals and captions tailored to your page and message.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">🎨</div><h3 data-en="Profile Picture & Logo Design" data-bn="প্রোফাইল পিকচার ও লোগো ডিজাইন">Profile Picture & Logo Design</h3><p data-en="Brand-focused profile visuals and logo concepts for a consistent look." data-bn="ব্র্যান্ডের সঙ্গে মানানসই প্রোফাইল ভিজ্যুয়াল ও লোগো কনসেপ্ট।">Brand-focused profile visuals and logo concepts for a consistent look.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">🌄</div><h3 data-en="Cover Photo & Banner Design" data-bn="কভার ফটো ও ব্যানার ডিজাইন">Cover Photo & Banner Design</h3><p data-en="Eye-catching cover images and banners aligned with your brand style." data-bn="আপনার ব্র্যান্ডের স্টাইল অনুযায়ী আকর্ষণীয় কভার ফটো ও ব্যানার।">Eye-catching cover images and banners aligned with your brand style.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">🗓️</div><h3 data-en="Facebook Page Management" data-bn="Facebook পেজ ম্যানেজমেন্ট">Facebook Page Management</h3><p data-en="Content scheduling and page upkeep based on an agreed plan." data-bn="সম্মত পরিকল্পনা অনুযায়ী কনটেন্ট শিডিউল ও পেজের নিয়মিত যত্ন।">Content scheduling and page upkeep based on an agreed plan.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">📣</div><h3 data-en="Facebook Ads Campaign Setup" data-bn="Facebook Ads ক্যাম্পেইন সেটআপ">Facebook Ads Campaign Setup</h3><p data-en="Campaign setup support after discussing your goals, audience and budget." data-bn="আপনার লক্ষ্য, অডিয়েন্স ও বাজেট আলোচনা করে ক্যাম্পেইন সেটআপ সাপোর্ট।">Campaign setup support after discussing your goals, audience and budget.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">🌱</div><h3 data-en="Organic Audience Growth" data-bn="অর্গানিক অডিয়েন্স গ্রোথ">Organic Audience Growth</h3><p data-en="Content and page improvement ideas focused on genuine audience engagement." data-bn="প্রকৃত অডিয়েন্সের এনগেজমেন্ট বাড়াতে কনটেন্ট ও পেজ উন্নয়নের আইডিয়া।">Content and page improvement ideas focused on genuine audience engagement.</p><a class="mini-link" href="#contact" data-en="Ask for a quote →" data-bn="মূল্য জানতে যোগাযোগ করুন →">Ask for a quote →</a></article>
+        <article class="service"><div class="service-icon">💡</div><h3 data-en="Other Social Media Support" data-bn="অন্যান্য সোশ্যাল মিডিয়া সাপোর্ট">Other Social Media Support</h3><p data-en="Have a different project? Send the details and we can discuss what you need." data-bn="অন্য কোনো কাজ আছে? বিস্তারিত জানালে আপনার প্রয়োজন নিয়ে আলোচনা করা যাবে।">Have a different project? Send the details and we can discuss what you need.</p><a class="mini-link" href="#contact" data-en="Tell me about it →" data-bn="বিস্তারিত জানান →">Tell me about it →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="poster-frame"><img src="assets/skyrocket-boost-services.png" alt="SKYROCKET BOOST social media and digital marketing services poster"></div>
+      <div class="about-copy">
+        <div class="kicker" data-en="ABOUT SKYROCKET BOOST" data-bn="SKYROCKET BOOST সম্পর্কে">ABOUT SKYROCKET BOOST</div>
+        <h2 data-en="A creative partner for your social media journey" data-bn="আপনার সোশ্যাল মিডিয়া যাত্রায় ক্রিয়েটিভ সহযোগী">A creative partner for your social media journey</h2>
+        <p data-en="I'm Sabbir Ahmad, a digital marketing freelancer building practical experience through personal portfolio projects. I focus on clear communication, thoughtful design and work that fits each client's needs." data-bn="আমি সাব্বির আহমেদ, ব্যক্তিগত পোর্টফোলিও প্রজেক্টের মাধ্যমে বাস্তব অভিজ্ঞতা তৈরি করছি। আমি স্পষ্ট যোগাযোগ, যত্নসহকারে ডিজাইন এবং ক্লায়েন্টের প্রয়োজন অনুযায়ী কাজের ওপর গুরুত্ব দিই।">I'm Sabbir Ahmad, a digital marketing freelancer building practical experience through personal portfolio projects. I focus on clear communication, thoughtful design and work that fits each client's needs.</p>
+        <div class="checks">
+          <div class="check"><b>✓</b><span data-en="Brand-focused visuals" data-bn="ব্র্যান্ড উপযোগী ভিজ্যুয়াল">Brand-focused visuals</span></div>
+          <div class="check"><b>✓</b><span data-en="Friendly communication" data-bn="সহজ যোগাযোগ">Friendly communication</span></div>
+          <div class="check"><b>✓</b><span data-en="Custom project quotes" data-bn="কাজ অনুযায়ী মূল্য">Custom project quotes</span></div>
+          <div class="check"><b>✓</b><span data-en="Bengali & English support" data-bn="বাংলা ও ইংরেজি সাপোর্ট">Bengali & English support</span></div>
+        </div>
+        <a class="btn" href="#contact" data-en="Let's Discuss Your Needs ↗" data-bn="আপনার প্রয়োজন নিয়ে কথা বলুন ↗">Let's Discuss Your Needs ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker" data-en="SELECTED BRAND MATERIALS" data-bn="নির্বাচিত ব্র্যান্ড ডিজাইন">SELECTED BRAND MATERIALS</div>
+        <h2 data-en="Portfolio & creative direction" data-bn="পোর্টফোলিও ও ক্রিয়েটিভ দিকনির্দেশনা">Portfolio & creative direction</h2>
+        <p data-en="These are the brand artwork and service poster supplied for this website. More project samples can be added as you create them." data-bn="এই ওয়েবসাইটে আপনার দেওয়া ব্র্যান্ড আর্টওয়ার্ক ও সার্ভিস পোস্টার রাখা হয়েছে। নতুন কাজ তৈরি হলে আরও নমুনা যোগ করা যাবে।">These are the brand artwork and service poster supplied for this website. More project samples can be added as you create them.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item"><img src="assets/skyrocket-boost-brand.png" alt="SKYROCKET BOOST brand artwork"><div class="portfolio-caption"><h3 data-en="Brand Identity Artwork" data-bn="ব্র্যান্ড আইডেন্টিটি আর্টওয়ার্ক">Brand Identity Artwork</h3><p data-en="Brand visual reference provided by Sabbir Ahmad." data-bn="সাব্বির আহমেদের দেওয়া ব্র্যান্ড ভিজ্যুয়াল রেফারেন্স।">Brand visual reference provided by Sabbir Ahmad.</p></div></article>
+        <article class="portfolio-item"><img src="assets/skyrocket-boost-services.png" alt="SKYROCKET BOOST services poster"><div class="portfolio-caption"><h3 data-en="Digital Marketing Services Poster" data-bn="ডিজিটাল মার্কেটিং সার্ভিস পোস্টার">Digital Marketing Services Poster</h3><p data-en="Service poster supplied as a design reference." data-bn="ডিজাইন রেফারেন্স হিসেবে দেওয়া সার্ভিস পোস্টার।">Service poster supplied as a design reference.</p></div></article>
+      </div>
+      <div class="note" data-en="Portfolio note: these visuals are displayed as supplied. No client reviews, campaign results or performance figures have been invented." data-bn="পোর্টফোলিও নোট: ছবিগুলো আপনার দেওয়া অবস্থায় দেখানো হয়েছে। কোনো ভুয়া ক্লায়েন্ট রিভিউ, ক্যাম্পেইনের ফলাফল বা পারফরম্যান্সের পরিসংখ্যান যোগ করা হয়নি।">Portfolio note: these visuals are displayed as supplied. No client reviews, campaign results or performance figures have been invented.</div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker" data-en="SIMPLE PROCESS" data-bn="সহজ কাজের ধাপ">SIMPLE PROCESS</div>
+        <h2 data-en="From your idea to the next step" data-bn="আপনার আইডিয়া থেকে পরবর্তী ধাপ">From your idea to the next step</h2>
+        <p data-en="A clear process helps both sides understand the project before work begins." data-bn="কাজ শুরুর আগে পরিষ্কার পরিকল্পনা থাকলে দুই পক্ষেরই সুবিধা হয়।">A clear process helps both sides understand the project before work begins.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><div class="step-num">01</div><h3 data-en="Share your requirements" data-bn="আপনার প্রয়োজন জানান">Share your requirements</h3><p data-en="Tell me about your business, goals, preferred style and timeline." data-bn="আপনার ব্যবসা, লক্ষ্য, পছন্দের ডিজাইন এবং সময়সীমা জানান।">Tell me about your business, goals, preferred style and timeline.</p></article>
+        <article class="step"><div class="step-num">02</div><h3 data-en="Confirm scope & quote" data-bn="কাজ ও মূল্য ঠিক করুন">Confirm scope & quote</h3><p data-en="We'll agree on the deliverables, timing and price before starting." data-bn="কাজ শুরুর আগে কী কী দেওয়া হবে, সময় এবং মূল্য ঠিক করব।">We'll agree on the deliverables, timing and price before starting.</p></article>
+        <article class="step"><div class="step-num">03</div><h3 data-en="Work together" data-bn="একসঙ্গে কাজ করি">Work together</h3><p data-en="Stay in touch during the project and review the agreed deliverables." data-bn="কাজ চলাকালে যোগাযোগ রাখব এবং সম্মত কাজগুলো পর্যালোচনা করব।">Stay in touch during the project and review the agreed deliverables.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-box">
+      <div>
+        <div class="kicker" data-en="CONTACT" data-bn="যোগাযোগ">CONTACT</div>
+        <h2 data-en="Let's talk about your project." data-bn="আপনার প্রজেক্ট নিয়ে কথা বলি।">Let's talk about your project.</h2>
+        <p data-en="Tell me what you want to build or improve. I'll get back to you to discuss the project and a suitable quote." data-bn="আপনি কী তৈরি করতে বা উন্নত করতে চান তা জানান। কাজ ও উপযুক্ত মূল্য নিয়ে আলোচনা করতে যোগাযোগ করব।">Tell me what you want to build or improve. I'll get back to you to discuss the project and a suitable quote.</p>
+        <div class="actions"><a class="btn" href="mailto:skyrocketboost0161@gmail.com" data-en="Email Me ↗" data-bn="ইমেইল করুন ↗">Email Me ↗</a></div>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:skyrocketboost0161@gmail.com"><span class="contact-icon">✉️</span><span><small data-en="Email" data-bn="ইমেইল">Email</small>skyrocketboost0161@gmail.com</span></a>
+        <a class="contact-link" href="https://wa.me/8801341185458" target="_blank" rel="noopener noreferrer"><span class="contact-icon">💬</span><span><small>WhatsApp</small>+880 1341-185458</span></a>
+        <a class="contact-link" href="https://www.facebook.com/share/1PDZaNopk2/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">📘</span><span><small>Facebook</small><span data-en="Visit my Facebook page/profile" data-bn="আমার Facebook পেজ/প্রোফাইল দেখুন">Visit my Facebook page/profile</span></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="footer-brand">SKYROCKET <span>BOOST</span></div>
+    <div class="footer-small">© <span id="year"></span> Sabbir Ahmad. <span data-en="All rights reserved." data-bn="সর্বস্বত্ব সংরক্ষিত।">All rights reserved.</span></div>
+    <div class="footer-small" data-en="Built for better online presence." data-bn="আরও ভালো অনলাইন উপস্থিতির জন্য।">Built for better online presence.</div>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById('languageToggle');
+  let currentLang = 'en';
+  function setLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en][data-bn]').forEach(el => {
+      el.textContent = el.dataset[lang];
+    });
+    document.querySelectorAll('[data-en-html][data-bn-html]').forEach(el => {
+      el.innerHTML = el.dataset[lang + 'Html'];
+    });
+    toggle.textContent = lang === 'en' ? 'বাংলা' : 'English';
+    toggle.setAttribute('aria-label', lang === 'en' ? 'Switch to Bengali' : 'Switch to English');
+  }
+  toggle.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'bn' : 'en'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
